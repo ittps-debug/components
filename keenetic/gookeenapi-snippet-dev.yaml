@@ -1,0 +1,28 @@
+key: add-dns-routes-snippet
+title: Add DNS routes voa interface from URL / File
+run: 
+  - add-dns-records
+
+post-run: 
+- show-interfaces
+# - add-awg
+
+
+help: 
+- add-awg: Set up a new WireGuard VPN connection
+
+
+# add-dns-records    Create custom DNS entries for local domains
+# add-dns-routing    Add DNS-routing rules for domain-based routing policies
+# add-routes         Add routing rules from .bat files and URLs
+# completion         Generate the autocompletion script for the specified shell
+# delete-dns-records Remove custom DNS entries from your router
+# delete-dns-routing Remove DNS-routing rules from specified interfaces
+# delete-known-hosts Clean up device list using name or MAC patterns
+# delete-routes      Remove routing rules from specified interfaces
+# exec               Run custom router commands directly
+# help               Help about any command
+# scheduler          Run scheduled tasks from scheduler configuration
+# show-interfaces    List available network interfaces on your router
+# update-awg         Update existing WireGuard VPN configuration
+# version            Show version information
