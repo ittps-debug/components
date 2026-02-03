@@ -1,0 +1,22 @@
+{{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "field-advanced-7",
+  "type": "registry:example",
+  "title": "Field Advanced 7",
+  "author": "shadcn.io",
+  "description": "A React form mixing input field types with text inputs for phone and email plus textarea for additional info separated by labeled dividers built with shadcn/ui",
+  "homepage": "https://www.shadcn.io/patterns/field/advanced/field-advanced-7",
+  "files": [
+    {
+      "type": "registry:example",
+      "path": "patterns/field/advanced/field-advanced-7.tsx",
+      "content": "import {\n  Field,\n  FieldDescription,\n  FieldGroup,\n  FieldLabel,\n  FieldSeparator,\n  FieldSet,\n} from \"~/components/ui/field\"\nimport { Input } from \"~/components/ui/input\"\nimport { Textarea } from \"~/components/ui/textarea\"\n\nconst Example = () =\u003E (\n  \u003Cdiv className=\"w-full max-w-md\"\u003E\n    \u003CFieldGroup\u003E\n      \u003CFieldSet\u003E\n        \u003CFieldLabel\u003EContact Information\u003C/FieldLabel\u003E\n        \u003CFieldDescription\u003EHow should we get in touch with you?\u003C/FieldDescription\u003E\n        \u003CFieldGroup\u003E\n          \u003CField\u003E\n            \u003CFieldLabel htmlFor=\"phone\"\u003EPhone Number\u003C/FieldLabel\u003E\n            \u003CInput\n              className=\"bg-background\"\n              id=\"phone\"\n              placeholder=\"+1 (555) 000-0000\"\n              type=\"tel\"\n            /\u003E\n          \u003C/Field\u003E\n          \u003CField\u003E\n            \u003CFieldLabel htmlFor=\"contact-email\"\u003EEmail Address\u003C/FieldLabel\u003E\n            \u003CInput\n              className=\"bg-background\"\n              id=\"contact-email\"\n              placeholder=\"you@example.com\"\n              type=\"email\"\n            /\u003E\n          \u003C/Field\u003E\n        \u003C/FieldGroup\u003E\n      \u003C/FieldSet\u003E\n      \u003CFieldSeparator\u003EAdditional Details\u003C/FieldSeparator\u003E\n      \u003CField\u003E\n        \u003CFieldLabel htmlFor=\"additional-info\"\u003EAdditional Information\u003C/FieldLabel\u003E\n        \u003CTextarea\n          className=\"bg-background\"\n          id=\"additional-info\"\n          placeholder=\"Any other details you'd like to share...\"\n          rows={3}\n        /\u003E\n      \u003C/Field\u003E\n    \u003C/FieldGroup\u003E\n  \u003C/div\u003E\n)\n\nexport default Example\n",
+      "target": "components/examples/field/advanced/field-advanced-7.tsx"
+    }
+  ],
+  "registryDependencies": [
+    "field",
+    "input",
+    "textarea"
+  ]
+}
